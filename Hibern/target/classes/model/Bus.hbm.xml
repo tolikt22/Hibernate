@@ -3,8 +3,9 @@
         <id column="bus_id" name="id" type="java.lang.Long">
             <generator class="increment"/>
         </id>
-        <property column="number" name="number" type="java.lang.String"/>
-        <set name="drivers" table="bus_driver" lazy="false">
+        <property column="number" name="number" type="java.lang.Integer"/>
+        <property column="route_id" name = "route_id" type  ="java.lang.Long"/>
+        <set name="drivers" table="bus_driver" lazy="true">
             <key column="bus_id"/>
             <many-to-many column="driver_id" class="terela.com.model.Driver"/>
         </set>

@@ -7,7 +7,7 @@
         <property column="surname" name="surname" type="java.lang.String"/>
         <property column="age" name="age" type="java.lang.Integer"/>
 
-        <set name="buses" table="bus_driver" lazy="false">
+        <set name="buses" table="bus_driver" lazy="true">
             <key column="driver_id"/>
             <many-to-many column="bus_id" class="terela.com.model.Bus"/>
         </set>

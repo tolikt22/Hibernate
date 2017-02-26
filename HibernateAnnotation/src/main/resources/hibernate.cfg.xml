@@ -1,21 +1,19 @@
 <hibernate-configuration>
 
     <session-factory>
-        <property name="connection.url">jdbc:postgresql://127.0.0.1:5432/java-2-06</property>
+        <property name="connection.url">jdbc:postgresql://127.0.0.1:5432/java_courses</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
-        <property name="connection.password">AdmiSQL</property>
+        <property name="connection.password">111</property>
         <property name="connection.pool_size">1</property>
         <property name="current_session_context_class">thread</property>
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
 
-        <mapping resource="model/Bus.hbm.xml"/>
-        <mapping resource="model/Driver.hbm.xml"/>
-        <mapping resource="model/Route.hbm.xml"/>
+        <mapping class="terela.com.model.Bus"/>
+        <mapping class="terela.com.model.Driver"/>
+        <mapping class="terela.com.model.Route"/>
 
     </session-factory>
 
 </hibernate-configuration>
-
-

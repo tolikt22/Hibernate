@@ -1,8 +1,14 @@
+package terela.com;
+
 import terela.com.dao.BusDAO;
 import terela.com.dao.BusDAOImpl;
 import terela.com.model.Bus;
+
 import java.sql.SQLException;
 
+/**
+ * Created by java-2-06 on 27.02.2017.
+ */
 public class Test {
     private static BusDAO busDAO = new BusDAOImpl();
 

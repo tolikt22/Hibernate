@@ -6,7 +6,7 @@
         <property column="name" name="name" type="java.lang.String"/>
         <property column="number" name="number" type="java.lang.Integer"/>
 
-        <set name="buses" lazy="false">
+        <set name="buses" lazy="true">
             <key column="route_id"/>
             <one-to-many class="terela.com.model.Bus"/>
         </set>

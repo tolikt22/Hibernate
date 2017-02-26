@@ -7,8 +7,17 @@ import java.util.Set;
  */
 public class Bus {
     private Long id;
-    private String number;
+    private int number;
     private Set<Driver> drivers;
+    private Long route_id;
+
+    public Long getRoute_id() {
+        return route_id;
+    }
+
+    public void setRoute_id(Long route_id) {
+        this.route_id = route_id;
+    }
 
     public Set<Driver> getDrivers() {
         return drivers;
@@ -18,11 +27,11 @@ public class Bus {
         this.drivers = drivers;
     }
 
-    public String getNumber() {
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
